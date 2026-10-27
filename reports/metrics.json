@@ -1,0 +1,306 @@
+{
+  "config": {
+    "fast": false,
+    "n_trees": 100,
+    "benign_cap": 300000,
+    "benign_per_file": null
+  },
+  "experiments": {
+    "binary_benign_vs_ddos": {
+      "n_test": 151039,
+      "accuracy": 0.99996,
+      "macro_f1": 0.99993,
+      "weighted_f1": 0.99996,
+      "macro_recall": 0.99993,
+      "per_class_f1": {
+        "0": 1.0,
+        "1": 0.9999
+      }
+    },
+    "multiclass_v1_baseline": {
+      "n_test": 565562,
+      "accuracy": 0.99864,
+      "macro_f1": 0.91087,
+      "weighted_f1": 0.99862,
+      "macro_recall": 0.90499,
+      "per_class_f1": {
+        "BENIGN": 0.9993,
+        "Bot": 0.8271,
+        "DDoS": 0.9998,
+        "DoS GoldenEye": 0.9951,
+        "DoS Hulk": 0.9985,
+        "DoS Slowhttptest": 0.9914,
+        "DoS slowloris": 0.9978,
+        "FTP-Patator": 0.9991,
+        "PortScan": 0.9948,
+        "SSH-Patator": 0.9996,
+        "Web Attack - Brute Force": 0.7604,
+        "Web Attack - XSS": 0.3675
+      }
+    },
+    "multiclass_v2_grouped_web": {
+      "n_test": 499566,
+      "accuracy": 0.9985,
+      "macro_f1": 0.97881,
+      "weighted_f1": 0.99849,
+      "macro_recall": 0.97288,
+      "per_class_f1": {
+        "BENIGN": 0.9991,
+        "Bot": 0.8347,
+        "DDoS": 0.9998,
+        "DoS GoldenEye": 0.9951,
+        "DoS Hulk": 0.9978,
+        "DoS Slowhttptest": 0.9881,
+        "DoS slowloris": 0.993,
+        "FTP-Patator": 1.0,
+        "PortScan": 0.9885,
+        "SSH-Patator": 0.9969,
+        "Web Attack": 0.9739
+      }
+    },
+    "capped_rf_plain": {
+      "n_test": 145136,
+      "accuracy": 0.99842,
+      "macro_f1": 0.98937,
+      "weighted_f1": 0.99841,
+      "macro_recall": 0.98674,
+      "per_class_f1": {
+        "BENIGN": 0.9984,
+        "Bot": 0.9314,
+        "DDoS": 0.9998,
+        "DoS GoldenEye": 0.9956,
+        "DoS Hulk": 0.999,
+        "DoS Slowhttptest": 0.9933,
+        "DoS slowloris": 0.9953,
+        "FTP-Patator": 1.0,
+        "PortScan": 0.9981,
+        "SSH-Patator": 0.9969,
+        "Web Attack": 0.9751
+      }
+    },
+    "capped_rf_class_weight": {
+      "n_test": 145136,
+      "accuracy": 0.99856,
+      "macro_f1": 0.99021,
+      "weighted_f1": 0.99856,
+      "macro_recall": 0.98787,
+      "per_class_f1": {
+        "BENIGN": 0.9985,
+        "Bot": 0.934,
+        "DDoS": 0.9999,
+        "DoS GoldenEye": 0.9959,
+        "DoS Hulk": 0.9992,
+        "DoS Slowhttptest": 0.9938,
+        "DoS slowloris": 0.9958,
+        "FTP-Patator": 1.0,
+        "PortScan": 0.9982,
+        "SSH-Patator": 0.9984,
+        "Web Attack": 0.9787
+      }
+    },
+    "capped_rf_smote": {
+      "n_test": 145136,
+      "accuracy": 0.99852,
+      "macro_f1": 0.99003,
+      "weighted_f1": 0.99852,
+      "macro_recall": 0.98858,
+      "per_class_f1": {
+        "BENIGN": 0.9985,
+        "Bot": 0.9344,
+        "DDoS": 0.9998,
+        "DoS GoldenEye": 0.9956,
+        "DoS Hulk": 0.9991,
+        "DoS Slowhttptest": 0.9938,
+        "DoS slowloris": 0.9949,
+        "FTP-Patator": 1.0,
+        "PortScan": 0.9981,
+        "SSH-Patator": 0.9984,
+        "Web Attack": 0.9776
+      }
+    },
+    "capped_decision_tree": {
+      "n_test": 145136,
+      "accuracy": 0.99824,
+      "macro_f1": 0.98799,
+      "weighted_f1": 0.99824,
+      "macro_recall": 0.98666,
+      "per_class_f1": {
+        "BENIGN": 0.9983,
+        "Bot": 0.9253,
+        "DDoS": 0.9999,
+        "DoS GoldenEye": 0.9954,
+        "DoS Hulk": 0.9992,
+        "DoS Slowhttptest": 0.9909,
+        "DoS slowloris": 0.9921,
+        "FTP-Patator": 0.9987,
+        "PortScan": 0.9973,
+        "SSH-Patator": 0.9992,
+        "Web Attack": 0.9716
+      }
+    },
+    "capped_random_forest": {
+      "n_test": 145136,
+      "accuracy": 0.99842,
+      "macro_f1": 0.98937,
+      "weighted_f1": 0.99841,
+      "macro_recall": 0.98674,
+      "per_class_f1": {
+        "BENIGN": 0.9984,
+        "Bot": 0.9314,
+        "DDoS": 0.9998,
+        "DoS GoldenEye": 0.9956,
+        "DoS Hulk": 0.999,
+        "DoS Slowhttptest": 0.9933,
+        "DoS slowloris": 0.9953,
+        "FTP-Patator": 1.0,
+        "PortScan": 0.9981,
+        "SSH-Patator": 0.9969,
+        "Web Attack": 0.9751
+      }
+    },
+    "capped_hist_gradient_boosting": {
+      "n_test": 145136,
+      "accuracy": 0.9968,
+      "macro_f1": 0.9707,
+      "weighted_f1": 0.99685,
+      "macro_recall": 0.97854,
+      "per_class_f1": {
+        "BENIGN": 0.9967,
+        "Bot": 0.8353,
+        "DDoS": 0.9994,
+        "DoS GoldenEye": 0.9929,
+        "DoS Hulk": 0.9988,
+        "DoS Slowhttptest": 0.9742,
+        "DoS slowloris": 0.9735,
+        "FTP-Patator": 0.9996,
+        "PortScan": 0.9983,
+        "SSH-Patator": 0.9977,
+        "Web Attack": 0.9112
+      }
+    },
+    "capped_rf_explain_model": {
+      "n_test": 145136,
+      "accuracy": 0.99735,
+      "macro_f1": 0.9713,
+      "weighted_f1": 0.99727,
+      "macro_recall": 0.9563,
+      "per_class_f1": {
+        "BENIGN": 0.997,
+        "Bot": 0.7812,
+        "DDoS": 0.9997,
+        "DoS GoldenEye": 0.9951,
+        "DoS Hulk": 0.9988,
+        "DoS Slowhttptest": 0.9895,
+        "DoS slowloris": 0.9944,
+        "FTP-Patator": 0.9983,
+        "PortScan": 0.9987,
+        "SSH-Patator": 0.9866,
+        "Web Attack": 0.9449
+      }
+    }
+  },
+  "timings": {
+    "load_and_clean": 32.83,
+    "rf_binary_fit": 55.49,
+    "rf_multiclass_v1_fit": 538.35,
+    "rf_multiclass_v2_grouped_fit": 466.4,
+    "rf_capped_plain_fit": 79.42,
+    "rf_capped_balanced_fit": 88.37,
+    "smote_resample": 3.26,
+    "rf_capped_smote_fit": 97.87,
+    "decision_tree_capped_fit": 26.35,
+    "hist_gradient_boosting_capped_fit": 15.71,
+    "cross_day_validation": 46.64,
+    "rf_explain_model_fit": 53.13,
+    "shap_values": 9.28
+  },
+  "data_quality": {
+    "rows_after_inf_nan_removal": 2827876,
+    "exact_duplicate_rows": 329896,
+    "duplicate_share_pct": 11.67,
+    "negative_flow_duration_rows": 115,
+    "identical_duplicate_columns": [
+      "Fwd Header Length.1"
+    ],
+    "rows_v2": 2497873,
+    "dropped_rare_classes": {
+      "Infiltration": 36,
+      "Heartbleed": 11
+    }
+  },
+  "cross_day": [
+    {
+      "attack": "DDoS",
+      "benign_train_day": "Tuesday",
+      "benign_test_day": "Monday",
+      "attack_recall": 1.0,
+      "false_positive_rate_same_day": 0.0,
+      "false_positive_rate_other_day": 0.1055,
+      "top_false_positive_ports": {
+        "443": 2122,
+        "80": 1373,
+        "22": 57
+      }
+    },
+    {
+      "attack": "DDoS",
+      "benign_train_day": "Monday",
+      "benign_test_day": "Tuesday",
+      "attack_recall": 0.9995,
+      "false_positive_rate_same_day": 0.0,
+      "false_positive_rate_other_day": 0.0,
+      "top_false_positive_ports": {}
+    },
+    {
+      "attack": "PortScan",
+      "benign_train_day": "Tuesday",
+      "benign_test_day": "Monday",
+      "attack_recall": 0.9999,
+      "false_positive_rate_same_day": 0.0,
+      "false_positive_rate_other_day": 0.0019,
+      "top_false_positive_ports": {
+        "80": 110,
+        "443": 78,
+        "57316": 1
+      }
+    },
+    {
+      "attack": "PortScan",
+      "benign_train_day": "Monday",
+      "benign_test_day": "Tuesday",
+      "attack_recall": 0.9999,
+      "false_positive_rate_same_day": 0.0,
+      "false_positive_rate_other_day": 0.0001,
+      "top_false_positive_ports": {
+        "3268": 2,
+        "80": 2,
+        "21": 1
+      }
+    }
+  ],
+  "prioritisation": {
+    "alerts": 85128,
+    "tier_counts": {
+      "High": 40381,
+      "Critical": 26334,
+      "Low": 17706,
+      "Medium": 707
+    },
+    "tier_precision": {
+      "Critical": 0.9998,
+      "High": 0.9993,
+      "Medium": 0.9774,
+      "Low": 0.9975
+    },
+    "min_spearman_across_weight_sets": 0.98,
+    "spearman_priority_vs_confidence_only": 0.122
+  },
+  "environment": {
+    "python": "3.13.16",
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.9.1",
+    "shap": "0.54.1",
+    "cpu_count": 2
+  }
+}

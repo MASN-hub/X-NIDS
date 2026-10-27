@@ -1,0 +1,23 @@
+# Python environments and caches
+venv/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Dataset and trained models: large and reproducible, never commit these
+data/
+data_synthetic/
+models/
+*.joblib
+*.pkl
+
+# Quick smoke-test outputs
+reports/quick/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Personal original notebook (kept locally, not published)
+local_only/

@@ -1,0 +1,5 @@
+attack,benign_train_day,benign_test_day,attack_recall,false_positive_rate_same_day,false_positive_rate_other_day,top_false_positive_ports
+DDoS,Tuesday,Monday,1.0,0.0,0.1055,"{443: 2122, 80: 1373, 22: 57}"
+DDoS,Monday,Tuesday,0.9995,0.0,0.0,{}
+PortScan,Tuesday,Monday,0.9999,0.0,0.0019,"{80: 110, 443: 78, 57316: 1}"
+PortScan,Monday,Tuesday,0.9999,0.0,0.0001,"{3268: 2, 80: 2, 21: 1}"

@@ -1,0 +1,4 @@
+model,fit_seconds,predict_us_per_flow
+decision_tree,26.4,0.2
+random_forest,79.4,5.9
+hist_gradient_boosting,15.7,3.1

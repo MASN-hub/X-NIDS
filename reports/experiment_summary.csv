@@ -1,0 +1,11 @@
+,n_test,accuracy,macro_f1,weighted_f1,macro_recall
+binary_benign_vs_ddos,151039.0,0.99996,0.99993,0.99996,0.99993
+multiclass_v1_baseline,565562.0,0.99864,0.91087,0.99862,0.90499
+multiclass_v2_grouped_web,499566.0,0.9985,0.97881,0.99849,0.97288
+capped_rf_plain,145136.0,0.99842,0.98937,0.99841,0.98674
+capped_rf_class_weight,145136.0,0.99856,0.99021,0.99856,0.98787
+capped_rf_smote,145136.0,0.99852,0.99003,0.99852,0.98858
+capped_decision_tree,145136.0,0.99824,0.98799,0.99824,0.98666
+capped_random_forest,145136.0,0.99842,0.98937,0.99841,0.98674
+capped_hist_gradient_boosting,145136.0,0.9968,0.9707,0.99685,0.97854
+capped_rf_explain_model,145136.0,0.99735,0.9713,0.99727,0.9563

@@ -1,0 +1,5 @@
+,default 0.6 sev / 0.4 crit,equal 0.5 / 0.5,severity-heavy 0.8 / 0.2,criticality-heavy 0.3 / 0.7
+default 0.6 sev / 0.4 crit,1.0,0.999,0.994,0.988
+equal 0.5 / 0.5,0.999,1.0,0.992,0.993
+severity-heavy 0.8 / 0.2,0.994,0.992,1.0,0.98
+criticality-heavy 0.3 / 0.7,0.988,0.993,0.98,1.0

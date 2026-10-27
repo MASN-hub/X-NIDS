@@ -1,0 +1,6 @@
+,accuracy,macro_f1,weighted_f1,macro_recall
+capped_decision_tree,0.99824,0.98799,0.99824,0.98666
+capped_random_forest,0.99842,0.98937,0.99841,0.98674
+capped_hist_gradient_boosting,0.9968,0.9707,0.99685,0.97854
+capped_rf_class_weight,0.99856,0.99021,0.99856,0.98787
+capped_rf_smote,0.99852,0.99003,0.99852,0.98858
